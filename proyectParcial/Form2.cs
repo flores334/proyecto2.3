@@ -32,5 +32,29 @@ namespace proyectParcial
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            // Recorre todos los controles del formulario
+            foreach (Control control in this.Controls)
+            {
+                // Verifica si el control es un TextBox
+                if (control is TextBox)
+                {
+                    TextBox textBox = control as TextBox;
+
+                    // Elimina los espacios en blanco al inicio y al final
+                    string campo = textBox.Text.Trim();
+
+                    // Verifica si el campo está vacío
+                    if (string.IsNullOrEmpty(campo))
+                    {
+                        MessageBox.Show("El campo " + textBox.Name + " no puede estar vacío");
+                        return;
+                    }
+                }
+            }
+        }
     }
 }
