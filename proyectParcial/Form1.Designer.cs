@@ -29,101 +29,105 @@
         private void InitializeComponent()
         {
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.lbnombre = new System.Windows.Forms.Label();
-            this.lbID = new System.Windows.Forms.Label();
-            this.lbcontrasena = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.button = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textnombre = new System.Windows.Forms.TextBox();
+            this.textidusuario = new System.Windows.Forms.TextBox();
+            this.textpassword = new System.Windows.Forms.TextBox();
+            this.button1continuar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::proyectParcial.Properties.Resources.descarga;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Image = global::proyectParcial.Properties.Resources.formulario_1_1;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(255, 398);
+            this.pictureBox1.Size = new System.Drawing.Size(798, 448);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // lbnombre
+            // label1
             // 
-            this.lbnombre.AutoSize = true;
-            this.lbnombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbnombre.Location = new System.Drawing.Point(307, 95);
-            this.lbnombre.Name = "lbnombre";
-            this.lbnombre.Size = new System.Drawing.Size(82, 22);
-            this.lbnombre.TabIndex = 2;
-            this.lbnombre.Text = "nombre ";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(79, 64);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(84, 25);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "nombre";
+            this.label1.Click += new System.EventHandler(this.label1_Click_1);
             // 
-            // lbID
+            // label2
             // 
-            this.lbID.AutoSize = true;
-            this.lbID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbID.Location = new System.Drawing.Point(307, 145);
-            this.lbID.Name = "lbID";
-            this.lbID.Size = new System.Drawing.Size(273, 25);
-            this.lbID.TabIndex = 3;
-            this.lbID.Text = "Numero de indentificacion  ";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(79, 131);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(110, 25);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "ID usuario";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // lbcontrasena
+            // label3
             // 
-            this.lbcontrasena.AutoSize = true;
-            this.lbcontrasena.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbcontrasena.Location = new System.Drawing.Point(307, 204);
-            this.lbcontrasena.Name = "lbcontrasena";
-            this.lbcontrasena.Size = new System.Drawing.Size(125, 25);
-            this.lbcontrasena.TabIndex = 4;
-            this.lbcontrasena.Text = "contrasena ";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(81, 213);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(110, 25);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "password ";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
-            // textBox1
+            // textnombre
             // 
-            this.textBox1.Location = new System.Drawing.Point(395, 97);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(318, 22);
-            this.textBox1.TabIndex = 5;
+            this.textnombre.Location = new System.Drawing.Point(187, 66);
+            this.textnombre.Name = "textnombre";
+            this.textnombre.Size = new System.Drawing.Size(100, 22);
+            this.textnombre.TabIndex = 4;
+            this.textnombre.TextChanged += new System.EventHandler(this.textnombre_TextChanged);
             // 
-            // textBox2
+            // textidusuario
             // 
-            this.textBox2.Location = new System.Drawing.Point(573, 149);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(120, 22);
-            this.textBox2.TabIndex = 6;
+            this.textidusuario.Location = new System.Drawing.Point(210, 135);
+            this.textidusuario.Name = "textidusuario";
+            this.textidusuario.Size = new System.Drawing.Size(100, 22);
+            this.textidusuario.TabIndex = 5;
             // 
-            // textBox3
+            // textpassword
             // 
-            this.textBox3.Location = new System.Drawing.Point(423, 208);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(140, 22);
-            this.textBox3.TabIndex = 7;
+            this.textpassword.Location = new System.Drawing.Point(222, 216);
+            this.textpassword.Name = "textpassword";
+            this.textpassword.Size = new System.Drawing.Size(100, 22);
+            this.textpassword.TabIndex = 6;
             // 
-            // button
+            // button1continuar
             // 
-            this.button.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button.Location = new System.Drawing.Point(296, 265);
-            this.button.Name = "button";
-            this.button.Size = new System.Drawing.Size(115, 42);
-            this.button.TabIndex = 0;
-            this.button.Text = "verificar ";
-            this.button.UseVisualStyleBackColor = true;
-            this.button.Click += new System.EventHandler(this.button_Click);
+            this.button1continuar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1continuar.Location = new System.Drawing.Point(112, 290);
+            this.button1continuar.Name = "button1continuar";
+            this.button1continuar.Size = new System.Drawing.Size(125, 45);
+            this.button1continuar.TabIndex = 7;
+            this.button1continuar.Text = "continuar ";
+            this.button1continuar.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.lbcontrasena);
-            this.Controls.Add(this.lbID);
-            this.Controls.Add(this.lbnombre);
+            this.Controls.Add(this.button1continuar);
+            this.Controls.Add(this.textpassword);
+            this.Controls.Add(this.textidusuario);
+            this.Controls.Add(this.textnombre);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -134,14 +138,15 @@
         }
 
         #endregion
+
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label lbnombre;
-        private System.Windows.Forms.Label lbID;
-        private System.Windows.Forms.Label lbcontrasena;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Button button;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox textnombre;
+        private System.Windows.Forms.TextBox textidusuario;
+        private System.Windows.Forms.TextBox textpassword;
+        private System.Windows.Forms.Button button1continuar;
     }
 }
 
