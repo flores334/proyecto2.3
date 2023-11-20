@@ -122,7 +122,7 @@
             this.label5.BackColor = System.Drawing.Color.Black;
             this.label5.Font = new System.Drawing.Font("Palatino Linotype", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Transparent;
-            this.label5.Location = new System.Drawing.Point(316, 24);
+            this.label5.Location = new System.Drawing.Point(327, 24);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(145, 23);
             this.label5.TabIndex = 6;
@@ -134,7 +134,7 @@
             this.label6.BackColor = System.Drawing.Color.Black;
             this.label6.Font = new System.Drawing.Font("Palatino Linotype", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Transparent;
-            this.label6.Location = new System.Drawing.Point(71, 419);
+            this.label6.Location = new System.Drawing.Point(38, 423);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(122, 23);
             this.label6.TabIndex = 7;
@@ -183,7 +183,7 @@
             // 
             this.textBox5.BackColor = System.Drawing.SystemColors.Window;
             this.textBox5.ForeColor = System.Drawing.Color.GreenYellow;
-            this.textBox5.Location = new System.Drawing.Point(310, 100);
+            this.textBox5.Location = new System.Drawing.Point(331, 99);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(151, 22);
             this.textBox5.TabIndex = 12;

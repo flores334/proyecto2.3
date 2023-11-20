@@ -12,25 +12,22 @@ namespace proyectParcial
 {
     public partial class Form2 : Form
     {
-        public Form2()
+        private void button1_Click(object sender, EventArgs e)
         {
-            InitializeComponent();
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            OpenFileDialog dialog = new OpenFileDialog();
-            DialogResult result = dialog.ShowDialog();
-
-            if (result == DialogResult.OK)
+            button1.Enabled = false;
+            if(!string.IsNullOrEmpty (txbidmedico.Text));
+                string.IsNullOrEmpty(txbpaciente.Text);
+                string.IsNullOrEmpty(txbduipaciente.Text);
+                string.IsNullOrEmpty(txbfechacita.Text);
+            
             {
-                pictureBox1.Image = Image.FromFile(dialog.FileName);
+                button1.Enabled = true;
             }
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void txbpaciente_TextChanged(object sender, EventArgs e)
         {
 
         }
-    }
+    }  
 }
