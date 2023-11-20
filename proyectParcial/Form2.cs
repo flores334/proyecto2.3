@@ -14,6 +14,20 @@ namespace proyectParcial
     {
         private void button1_Click(object sender, EventArgs e)
         {
-    }   
+            button1.Enabled = false;
+            if(!string.IsNullOrEmpty (txbidmedico.Text));
+                string.IsNullOrEmpty(txbpaciente.Text);
+                string.IsNullOrEmpty(txbduipaciente.Text);
+                string.IsNullOrEmpty(txbfechacita.Text);
+            
+            {
+                button1.Enabled = true;
+            }
+        }
+
+        private void txbpaciente_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }  
 }

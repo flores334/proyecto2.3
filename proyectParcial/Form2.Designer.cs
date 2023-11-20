@@ -37,8 +37,8 @@
             this.txbpaciente = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.cmblsmedico = new System.Windows.Forms.ComboBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.txbidmedico = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -59,6 +59,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel1.Controls.Add(this.txbidmedico);
             this.panel1.Controls.Add(this.txbfechacita);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.txbduipaciente);
@@ -66,7 +67,6 @@
             this.panel1.Controls.Add(this.txbpaciente);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.cmblsmedico);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(12, 12);
@@ -83,7 +83,6 @@
             this.txbfechacita.Name = "txbfechacita";
             this.txbfechacita.Size = new System.Drawing.Size(251, 30);
             this.txbfechacita.TabIndex = 9;
-            this.txbfechacita.Text = "09/11/2023";
             // 
             // label4
             // 
@@ -105,7 +104,6 @@
             this.txbduipaciente.Name = "txbduipaciente";
             this.txbduipaciente.Size = new System.Drawing.Size(251, 30);
             this.txbduipaciente.TabIndex = 7;
-            this.txbduipaciente.Text = "045673875-0";
             // 
             // label3
             // 
@@ -127,7 +125,8 @@
             this.txbpaciente.Name = "txbpaciente";
             this.txbpaciente.Size = new System.Drawing.Size(251, 30);
             this.txbpaciente.TabIndex = 5;
-            this.txbpaciente.Text = "Mejía Flores Edgar David";
+            this.txbpaciente.Text = "\r\n";
+            this.txbpaciente.TextChanged += new System.EventHandler(this.txbpaciente_TextChanged);
             // 
             // label2
             // 
@@ -147,17 +146,9 @@
             this.label1.ForeColor = System.Drawing.Color.Teal;
             this.label1.Location = new System.Drawing.Point(382, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(203, 31);
+            this.label1.Size = new System.Drawing.Size(133, 31);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Lista del Médico";
-            // 
-            // cmblsmedico
-            // 
-            this.cmblsmedico.FormattingEnabled = true;
-            this.cmblsmedico.Location = new System.Drawing.Point(388, 84);
-            this.cmblsmedico.Name = "cmblsmedico";
-            this.cmblsmedico.Size = new System.Drawing.Size(202, 24);
-            this.cmblsmedico.TabIndex = 2;
+            this.label1.Text = "ID Medico";
             // 
             // pictureBox1
             // 
@@ -167,6 +158,17 @@
             this.pictureBox1.Size = new System.Drawing.Size(360, 462);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
+            // 
+            // txbidmedico
+            // 
+            this.txbidmedico.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.txbidmedico.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbidmedico.ForeColor = System.Drawing.SystemColors.Window;
+            this.txbidmedico.Location = new System.Drawing.Point(388, 70);
+            this.txbidmedico.Name = "txbidmedico";
+            this.txbidmedico.Size = new System.Drawing.Size(251, 30);
+            this.txbidmedico.TabIndex = 10;
+            this.txbidmedico.Text = "\r\n";
             // 
             // Form2
             // 
@@ -189,12 +191,12 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox cmblsmedico;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txbpaciente;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txbduipaciente;
         private System.Windows.Forms.TextBox txbfechacita;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txbidmedico;
     }
 }
