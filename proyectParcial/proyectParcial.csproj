@@ -131,5 +131,26 @@
   <ItemGroup>
     <None Include="Resources\fomrs.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\#health Tips.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Siga %40atlasdeanato.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga %283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fondos de Pantalla Aesthetic _ Póster gráfico, Pósteres vintage, Pegatinas bonitas %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imagen formulario 1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\formulario 1.1.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
