@@ -12,25 +12,8 @@ namespace proyectParcial
 {
     public partial class Form2 : Form
     {
-        public Form2()
+        private void button1_Click(object sender, EventArgs e)
         {
-            InitializeComponent();
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            OpenFileDialog dialog = new OpenFileDialog();
-            DialogResult result = dialog.ShowDialog();
-
-            if (result == DialogResult.OK)
-            {
-                pictureBox1.Image = Image.FromFile(dialog.FileName);
-            }
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-    }
+    }   
+    }  
 }
